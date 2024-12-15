@@ -1,0 +1,8 @@
+[07-Apr-2023 14:47:00 Europe/Budapest] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'zurcihu1_zurcsi'@'5.56.38.113' to database 'zurcihu1_test1' in /home/zurcihu1/public_html/archo/app/database/connected.php on line 8
+[07-Apr-2023 14:47:00 Europe/Budapest] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/zurcihu1/public_html/archo/app/database/db.php on line 11
+[07-Apr-2023 14:47:00 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/zurcihu1/public_html/archo/app/database/db.php:14
+Stack trace:
+#0 /home/zurcihu1/public_html/archo/app/database/db.php(227): executeQuery('SELECT * FROM k...', Array)
+#1 /home/zurcihu1/public_html/archo/index.php(3): getAllImages()
+#2 {main}
+  thrown in /home/zurcihu1/public_html/archo/app/database/db.php on line 14
