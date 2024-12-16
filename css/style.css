@@ -137,7 +137,7 @@ a, span {
   color: #b19777 !important; }
 
 .bg-gray {
-  background-color: #f8f4f3; }
+  background-color: #51636D; }
   .bg-gray .primery-shadow {
     -webkit-box-shadow: 0px 4px 30px -4px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 30px -4px rgba(0, 0, 0, 0.2); }
@@ -149,7 +149,7 @@ a, span {
     box-shadow: 0px 4px 40px -4px rgba(255, 255, 255, 0.2); }
 
 .bg-color {
-  background-color: #b19777 !important; }
+  background-color: #ADB9C6 !important; }
   .bg-color .primery-shadow {
     -webkit-box-shadow: 0px 4px 40px -4px rgba(255, 255, 255, 0.2);
     box-shadow: 0px 4px 40px -4px rgba(255, 255, 255, 0.2); }
@@ -3869,3 +3869,8 @@ body {
     top: -25px; } }
 
 /* ====================== [ End Responsive ] ====================== */
+
+.services-text p, .services-text h1, .services-text h6, .services-text h4, .services-text{
+  font-size: 1.6rem;
+  color: #000;
+}

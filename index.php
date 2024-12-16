@@ -52,14 +52,12 @@
                         data-overlay-dark="6">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-7 col-md-9">
+                                <div class="col-lg-10 col-md-9">
                                     <div class="caption center">
-                                        <h1 data-splitting class="playfont"><a href="./contact_page.php">
-                                        Építészeti tervezés, Generál
-                            tervezés </a>
+                                        <h1 data-splitting class="playfont text-uppercase"><a href="./contact_page.php">
+                                        Építészeti tervezés, Generál tervezés </a>
                                         </h1>
-                                        <p>Családi ház tervezése - Állapotfelmérés - Tervdokumentáció - Generálkivitelezés -
-                                        Területfejlesztés - Tanácsadás</p>
+                                        <p>Családi ház tervezése - Állapotfelmérés - Tervdokumentáció - Területfejlesztés - Tanácsadás</p>
                                         <a href="./contact_page.php" class="btn-curve btn-color mt-20">
                                             <span>Ajánlatkérés</span>
                                         </a>
@@ -76,7 +74,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 col-md-9">
                                     <div class="caption center">
-                                        <h1 data-splitting class="playfont"><a href="./contact_page.php">Projektmenedzsment és Műszaki ellenőrzés</a>
+                                        <h1 data-splitting class="playfont text-uppercase"><a href="./contact_page.php">Projektmenedzsment és Műszaki ellenőrzés</a>
                                         </h1>
                                         <p>Szerződéstervezetek készítése - Adásvételi szerződés összeállítása - Kivitelezés
                             műszaki
@@ -97,7 +95,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 col-md-9">
                                     <div class="caption center">
-                                        <h1 data-splitting class="playfont"><a href="./contact_page.php">
+                                        <h1 data-splitting class="playfont text-uppercase"><a href="./contact_page.php">
                                         Ingatlanfejlesztés</a>
                                         </h1>
                                         <p>Átalakítás-felújítás, Ingatlanértékelés, Teljes körű ingatlanfejlesztés - Engedélyeztetés
@@ -118,7 +116,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
-                                        <h1 data-splitting class="playfont"><a href="#0">
+                                        <h1 data-splitting class="playfont text-uppercase"><a href="#0">
                                                 Innovative <br> Architecture
                                             </a>
                                         </h1>
@@ -139,7 +137,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
-                                        <h1 data-splitting class="playfont"><a href="#0">
+                                        <h1 data-splitting class="playfont text-uppercase"><a href="#0">
                                                 Classic <br> and Modern
                                             </a></h1>
                                         <p>Architek have been developing a transversal approach combining architecture,
@@ -159,7 +157,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
-                                        <h1 data-splitting class="playfont"><a href="#0">
+                                        <h1 data-splitting class="playfont text-uppercase"><a href="#0">
                                                 Elegant <br> Unique Design
                                             </a>
                                         </h1>
@@ -180,7 +178,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 col-md-9">
                                     <div class="caption center">
-                                        <h1 data-splitting class="playfont"><a href="#0">
+                                        <h1 data-splitting class="playfont text-uppercase"><a href="#0">
                                                 interior <br> design agency
                                             </a></h1>
                                         <p>Architek have been developing a transversal approach combining architecture,
@@ -226,16 +224,16 @@
                 <div class="col-lg-7 valign">
                     <div class="exp-content nopat wow fadeInUp" data-wow-delay=".3s">
                         <!--<h6 class="sub-title">Rólunk</h6>-->
-                        <h2 class="mb-20 playfont">Ingatlanfejlesztés, Tervezés, kivitelezés, menedzsment? - Az épület
-                            jövőjét a koncepció alapozza meg!</h2>
-                        <p> Az emberi élettér egyik megtestesülési formája az épület. Akár egy családi házról, akár egy
+                        <h4 class="mb-20 playfont">Ingatlanfejlesztés, Tervezés, kivitelezés, menedzsment? - Az épület
+                            jövőjét a koncepció alapozza meg!</h4>
+                        <p class="text-justify"> Az emberi élettér egyik megtestesülési formája az épület. Akár egy családi házról, akár egy
                             közösségi intézményről is legyen szó, fontos, hogy olyan tapasztalt építész tervezőt
                             válasszon, aki képes meglátni azt, amit mások nem, ezenkívül valamennyi munkafolyamat
                             elvégzésében jártas, de legfőképpen, aki lelkiismeretesen tervezi meg álmai épületét. Ilyen
                             lehet egy igazán emberközpontú élettér.
                         </p>
                         <p></p>
-                        <p>
+                        <p class="text-justify">
                             Személyre szabott igényeit egyedi ötletekkel gyarapítom, hogy a lehető legtökéletesebb
                             eredményt érjük el együtt.
                         </p>
@@ -384,7 +382,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="item">
-                                        <h3><span class="nbr custom-font counter">17 Év</span></h3>
+                                        <h3><span class="nbr custom-font counter">25 Év</span></h3>
                                         <h6>Szakmai tapasztalat</h6>
                                     </div>
                                 </div>
@@ -408,7 +406,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-8 col-sm-10">
                             <!--<h6 class="custom-font wow fadeInDown" data-wow-delay=".3s"></h6>-->
-                            <h4 class="playfont wow flipInX" data-wow-delay=".5s">REFERENCIÁK</h4>
+                            <h4 class="playfont wow flipInX" data-wow-delay=".5s">TAPASZTALATOK</h4>
                         </div>
                     </div>
                 </div>
@@ -588,6 +586,7 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+
 
 
 </body>

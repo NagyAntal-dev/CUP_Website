@@ -7,222 +7,147 @@
 <!DOCTYPE html>
 <html lang="hu">
 
-<?php include('./assets/meta.php') ?>
+<?php include('./assets/meta.php'); ?>
 
 <body>
 
-    <!-- ==================== Start Loading ==================== -->
+<!-- ==================== Start Preloader ==================== -->
+<div id="preloader">
+    <div class="loading-text">Oldal betöltése</div>
+</div>
+<!-- ==================== End Preloader ==================== -->
 
-    <div id="preloader">
-        <div class="loading-text">Oldal betöltése</div>
-    </div>
+<!-- ==================== Start Custom Cursor ==================== -->
+<div class="mouse-cursor cursor-outer"></div>
+<div class="mouse-cursor cursor-inner"></div>
+<!-- ==================== End Custom Cursor ==================== -->
 
-    <!-- ==================== End Loading ==================== -->
+ <!-- ==================== Start Navbar ==================== -->
 
+ <nav class="navbar light change navbar-expand-lg">
+        <div class="d-flex align-items-center justify-content-between w-100">
 
-    <!-- ==================== Start progress-scroll-button ==================== -->
+            <!-- Logo -->
+            <div class="">
+                <a class="logo  fz-20 navbar-brand" href="./" style="color: #000;">
+                <img src="img/logo.png" class="img-fluid" alt="logo" srcset="" style="max-width: 60px; min-heigth: 60px">
+                <!--<img src="img/logo-light.png" alt="logo">-->
+                CUPSTAR CONSULTING INVESTMENTS KFT.
+            </a>
+            </div>
 
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="">
+                <ul class="navbar-nav ml-auto">
+                    <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Home</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html">Main Home</a>
+                            <a class="dropdown-item" href="index3.html">Architecture</a>
+                            <a class="dropdown-item" href="index2.html">Interior Design</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="index.php">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="about.php">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="portfolio-mas2.php">Referenciák</a>
+                    </li>
+                    <!--<li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="blog.php">Blogs</a>
+                            <a class="dropdown-item" href="blog-details.php">Post Details</a>
+                        </div>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="contact_page.php">Kapcsolat</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <a class="logo fz-20" href="./" style="color: #000;">
+                <!--<img src="img/logo-light.png" alt="logo">-->
+                <strong>LIVING</strong> SPACE
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- ==================== End progress-scroll-button ==================== -->
-
-
-    <!-- ==================== Start cursor ==================== -->
-
-    <div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
-
-    <!-- ==================== End cursor ==================== -->
-
-
-     <!-- ==================== Start Navbar ==================== -->
-     <?php  include_once('./assets/navbar.php') ?>
     <!-- ==================== End Navbar ==================== -->
 
+<div class="d-inline-block h-100">
+    <div class="row text-justify">
+        <!-- Left Sidebar with Background Image -->
+        <div class="col-md-3 p-4 d-flex align-items-start flex-column justify-content-start" 
+            style="background: url('img/<?php echo $service['image']; ?>') no-repeat center center; 
+                   background-size: cover; color: white; height: 100vh">
+            <h2 class="text-center fw-bold bg-dark bg-opacity-75 p-2 w-100">
+                <?php echo $service['title']; ?>
+            </h2>
+        </div>
 
-    <!--  //foreach ($thisServices as $key => $service):  -->
-    <!-- ==================== Start Header ==================== -->
-
-    <header class="pages-header bg-img valign parallaxie" data-background="img/<?php echo $service['image'];?>" data-overlay-dark="5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="cont text-center">
-                        <h1><?php echo $service['title'];?></h1>
-                        <div class="path">
-                            <a href="index.php">Kezdőlap</a><span>/</span><a class="active"><?php echo $service['title'];?></a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Right Content -->
+        <div class="col-md-9 p-4 services-text">
+            <!--<h2 class="mb-4 fw-bold"><?php echo $service['title']; ?></h2>-->
+            <p><?php echo html_entity_decode($service['subtitle']); ?></p>
+            <div>
+                <?php echo $service['content']; ?>
             </div>
         </div>
-    </header>
+    </div>
+</div>
 
-    <!-- ==================== End Header ==================== -->
+<!-- ==================== Start Footer ==================== -->
+<?php include('./assets/footer.php'); ?>
+<!-- ==================== End Footer ==================== -->
 
+<!-- jQuery -->
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- ==================== Start Intro ==================== -->
+<!-- plugins -->
+<script src="js/plugins.js"></script>
 
-    <section class="intro-section section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4">
-                    <div class="htit">
-                        <h4> <?php echo $service['title'];?></h4>
-                    </div>
-                </div>
-                <div class="col-lg-8 offset-lg-1 col-md-8 mb-30">
-                    <div class="">
-                        <p><?php echo html_entity_decode($service['subtitle']);?></p>
-                        <?php echo($service['content']);?>
-                    </div>
-                </div>
+<!-- Custom Cursor Script -->
+<script>
+    const cursorOuter = document.querySelector('.cursor-outer');
+    const cursorInner = document.querySelector('.cursor-inner');
 
-                <!--<div class="col-lg-3">
-                    <div class="item mt-30">
-                        <h6>Client</h6>
-                        <p><a href="#0">Envato.com</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="item mt-30">
-                        <h6>Date</h6>
-                        <p>6 August 2019</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="item mt-30">
-                        <h6>Categories</h6>
-                        <p><a href="#0">Web Design </a>, <a href="#0">WordPress</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="item mt-30">
-                        <h6>Tags</h6>
-                        <p><a href="#0">Minimal</a> , <a href="#0">Modern</a> , <a href="#0">Design</a></p>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-    </section>
+    document.addEventListener('mousemove', (e) => {
+        const { clientX: x, clientY: y } = e;
+        cursorOuter.style.transform = `translate(${x}px, ${y}px)`;
+        cursorInner.style.transform = `translate(${x}px, ${y}px)`;
+    });
+</script>
 
-    <!-- ==================== End Intro ==================== -->
+<!-- Preloader Script -->
+<script>
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.display = 'none';
+        }
+    });
+</script>
 
+<!-- Custom Scripts -->
+<script src="js/scripts.js"></script>
 
-
-
-    <!-- ==================== Start projdtal ==================== 
-
-    <section class="projdtal">
-        <div class="justified-gallery">
-            <a href="img/portfolio/project1/1.jpg">
-                <img alt="" src="img/portfolio/project1/1.jpg" />
-            </a>
-            <a href="img/portfolio/project1/2.jpg">
-                <img alt="" src="img/portfolio/project1/2.jpg" />
-            </a>
-
-            <a href="img/portfolio/project1/6.jpg">
-                <img alt="" src="img/portfolio/project1/6.jpg" />
-            </a>
-            <a href="img/portfolio/project1/3.jpg">
-                <img alt="" src="img/portfolio/project1/3.jpg" />
-            </a>
-        </div>
-    </section>
-
-    ==================== End projdtal ==================== -->
-
-
-
-
-    <!-- ==================== Start Video-wrapper ==================== 
-
-    <section>
-        <div class="container-fluid">
-            <div class="video-wrapper section-padding bg-img parallaxie valign"
-                data-background="img/portfolio/project1/vid.jpg" data-overlay-dark="4">
-                <div class="full-width text-center">
-                    <a class="vid" href="https://vimeo.com/127203262">
-                        <div class="vid-butn">
-                            <span class="icon">
-                                <i class="fas fa-play"></i>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     ==================== End Video-wrapper ==================== -->
-
-
-
-    <!-- ==================== Start projdtal ==================== 
-
-    <section class="projdtal">
-        <div class="justified-gallery">
-            <a href="img/portfolio/project1/8.jpg">
-                <img alt="" src="img/portfolio/project1/8.jpg" />
-            </a>
-            <a href="img/portfolio/project1/9.jpg">
-                <img alt="" src="img/portfolio/project1/9.jpg" />
-            </a>
-        </div>
-    </section>
-
-     ==================== End projdtal ==================== -->
-
-
-
-
-    <!-- ==================== Start call-to-action ==================== 
-
-    <section class="call-action nogif next">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="content text-center">
-                        <a href="project-details2.html">
-                            <h6 class="wow" data-splitting>Next Project</h6>
-                            <h2 class="wow" data-splitting><b> Luxury </b> Furniture</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="nxt-img bg-img" data-background="img/portfolio/project1/bg.jpg"></div>
-    </section>
-
-     ==================== End call-to-action ==================== -->
-
-    <?php echo($serviceid); //endforeach; ?>
-
-    <!-- ==================== Start Footer ==================== -->
-
-    <?php include('./assets/footer.php') ?>
-
-    <!-- ==================== End Footer ==================== -->
-
-
-
-
-    <!-- jQuery -->
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.min.js"></script>
-
-    <!-- plugins -->
-    <script src="js/plugins.js"></script>
-
-    <!-- custom scripts -->
-    <script src="js/scripts.js"></script>
+<!-- Map -->
+<script src="js/map.js"></script>
 
 </body>
-
 </html>
